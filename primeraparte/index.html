@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Agregar Producto</title>
+        <link rel="stylesheet" href="bootstrap.min (1).css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="bootstrap.bundle.min.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="img/kfc.png" alt="" width="34" height="34" class="d-inline-block align-text-top">
+                </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          
+              <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav me-auto">
+                  
+                  <li class="nav-item">
+                    <a class="nav-link" href="/segundaparte/pedidos.html">> Hacer pedido</a>
+                  </li>
+                 
+                  
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-sm-2" type="text" placeholder="Search">
+                  <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+
+
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-lg-4">
+<form id="form_productos">
+                <div class="mb-3">
+                    <label for="form-label"></label>
+                    <input id="inp_producto" class="form-control" type="text" placeholder="Producto">
+                </div>
+
+                <div class="mb-3">
+                    <label for="form-label"></label>
+                    <input id="inp_precio" class="form-control" type="number" placeholder="Precio">
+                </div>
+
+                <div class="mb-3">
+                    <label for="form-label"></label>
+                    <input id="inp_imagen" class="form-control" type="url" placeholder="URL imagen del producto">
+                </div>
+
+                <div class="mb-3">
+                    <label for="form-label"></label>
+                    <input id="inp_descripcion" class="form-control" type="text" placeholder="Descripción">
+                </div>
+
+              
+              </form>                
+              <button id="btn_guardar" class="btn btn-success">Guardar</button>
+              <button id="btn_actualizar" style="display:none;" class="btn btn-info">Actualizar</button>
+            </div>
+
+            <div class="col-lg-8">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th style="text-align:center">#</th>
+                            <th style="text-align:center">Producto</th>
+                            <th style="text-align:center">Imagen</th>
+                            <th style="text-align:center">Descripción</th>
+                            <th style="text-align:center">Precio</th>
+                            <th style="text-align:center">&#x2693</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody"></tbody>
+
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div id="mymodal" class="modal fade" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">¿Está seguro que desea borrar?</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Por favor, confirme si desea borrar los datos.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+            <button id="btn_eliminar" type="button" class="btn btn-danger">Eliminar</button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+        
+
+
+
+
+        <script src="main.js" type="module"></script>
+        <script src="auxiliar.js"></script>
+    </body>
+</html>

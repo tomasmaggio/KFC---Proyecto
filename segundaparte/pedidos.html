@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min (1).css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Hacer pedido</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="img/kfc.png" alt="" width="34" height="34" class="d-inline-block align-text-top">
+        </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav me-auto">
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/primeraparte/index.html">> Agregar Producto</a>
+          </li>
+         
+          
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-sm-2" type="text" placeholder="Search">
+          <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+        <div class="container-fluid">
+            <div class="row p-3">
+                <div class="col-lg-8" >
+                    <div class="row" id="tarjetas">
+                    </div>  
+                </div>
+
+                <div class="col-lg-4">
+                  <div class="row"><input id="inp_cliente" type="text" placeholder="Nombre del cliente"></div>
+                    <table class="table mt-2">
+                        <thead class="table-dark">
+                            <tr>
+                                <td>Encargo</td>
+                                <td id="cantidad">Cantidad</td>
+                                <td>Precio</td>
+                                <td></td>
+                            </tr>
+                        </thead>
+
+                        <tbody id="table_body">
+                            <tr>
+                                <td id="total_">Total</td>
+                                <td></td>
+                                <td>$</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                      </table>
+
+                    <div class="d-grid gap-2">
+                        <button id="btn_finalizar" class="btn btn-danger" type="button">Finalizar pedido</button>
+                      <button id="btn_vaciar_pedido" class="btn btn-warning">Cancelar</button>
+                      </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+<script src="2main.js" type="module"></script>
+<script src="2auxiliar.js"></script>
+<script src="bootstrap.bundle.min copy.js"></script>
+</body>
+</html>
