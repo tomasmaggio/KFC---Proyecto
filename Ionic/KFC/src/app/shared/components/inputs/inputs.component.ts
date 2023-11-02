@@ -12,7 +12,7 @@ export class InputsComponent  implements OnInit {
   @Input() type!: string;
   @Input() label!: string;
   @Input() autocompletar!: string;
-  @Input() icon!: string;
+  @Input() icono!: string;
 
 
   constructor() { }
