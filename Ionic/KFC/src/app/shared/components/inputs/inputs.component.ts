@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-inputs',
@@ -6,6 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./inputs.component.scss'],
 })
 export class InputsComponent  implements OnInit {
+
+  @Input() control!: FormControl;
+  @Input() type!: string;
+  @Input() label!: string;
+  @Input() autocompletar!: string;
+  @Input() icon!: string;
+
 
   constructor() { }
 
