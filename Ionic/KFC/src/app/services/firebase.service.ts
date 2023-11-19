@@ -1,6 +1,6 @@
 import { Injectable, inject } from '@angular/core';
 import { AngularFireAuth } from '@angular/fire/compat/auth'
-import { getAuth, signInWithEmailAndPassword } from 'firebase/auth'
+import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword } from 'firebase/auth'
 import { User } from '../models/users.models';
 
 @Injectable({
@@ -17,6 +17,10 @@ export class FirebaseService {
     return signInWithEmailAndPassword(getAuth(), user.email, user.password)
   }
 
+  //Registrarse
+  registrarse(user: User){
+    return createUserWithEmailAndPassword(getAuth(), user.email, user.password)
+  }
 
   constructor() { }
 }

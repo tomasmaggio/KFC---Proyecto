@@ -2,6 +2,16 @@
 <ion-content [fullscreen]="true">
   <div class='d-flex-center'>
     <form [formGroup]="form">
+
+      <!-- input nombre -->
+      <app-inputs 
+      autocompletar="nombre"
+      icono="person-outline"
+      [control]="form.controls.name"
+      type="text"
+      label="Nombre"
+      ></app-inputs>
+
       <!-- input email -->
       <app-inputs 
       autocompletar="email"
@@ -18,6 +28,11 @@
       [control]="form.controls.password"
       label="Contraseña"
       ></app-inputs>
+
+        <!-- boton -->
+        <ion-button expand="block" fill="clear" class="submit" type="submit" (click)="crearUsuario()">
+          Registrarse
+        </ion-button>
     </form>
   </div>
 </ion-content>
