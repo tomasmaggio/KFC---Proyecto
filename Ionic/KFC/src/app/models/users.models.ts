@@ -1,3 +1,4 @@
+//Modelo de user
 export interface User{
     uid:string;
     email:string;
