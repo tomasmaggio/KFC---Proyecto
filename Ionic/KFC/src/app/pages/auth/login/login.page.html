@@ -1,9 +1,29 @@
-<app-header titulo="Iniciar sesion"></app-header>
-
+<app-header collapse="condense" titulo="Iniciar sesion"></app-header>
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">login</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div class='d-flex-center'>
+    <form [formGroup]="form">
+      <!-- input email -->
+      <app-inputs 
+      autocompletar="email"
+      icono="mail-outline"
+      [control]="form.controls.email"
+      type="email"
+      label="Correo"
+      ></app-inputs>
+  
+      <!-- input contraseña -->
+      <app-inputs
+      icono="lock-closed-outline"
+      type="password"
+      [control]="form.controls.password"
+      label="Contraseña"
+      ></app-inputs>
+
+      <!-- boton -->
+      <ion-button expand="block" fill="clear" class="submit" type="submit" (click)="ingresar()">
+        Iniciar sesión
+      </ion-button>
+
+    </form>
+  </div>
 </ion-content>
