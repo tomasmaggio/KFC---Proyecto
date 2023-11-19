@@ -1,5 +1,10 @@
 <ion-item class="custominput" lines="none">
   <ion-icon *ngIf="icono" slot="start" [name]="icono"></ion-icon>
-  <ion-input type="text" placeholder="terrible input">
-  </ion-input>
+  <ion-input 
+  [type]="type"
+  [autocomplete]="autocompletar"
+  [label]="label"
+  [formControl]="control"
+  labelPlacement="floating"
+  ></ion-input>
 </ion-item>
