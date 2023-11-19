@@ -1,5 +1,22 @@
-<app-header titulo="Registrarse"></app-header>
+<ion-content [fullscreen]="true">
+  <app-header titulo="Registrarse"></app-header>
+  <form [formGroup]="form">
+    <!-- input email -->
+    <app-inputs 
+    autocompletar="email"
+    icono="mail-outline"
+    [control]="form.controls.email"
+    type="email"
+    label="Correo"
+    ></app-inputs>
 
-<ion-content>
-  <app-inputs ></app-inputs>
+    <!-- input contraseña -->
+    <app-inputs
+    icono="lock-closed-outline"
+    type="password"
+    [control]="form.controls.password"
+    label="Contraseña"
+    ></app-inputs>
+  </form>
+
 </ion-content>
