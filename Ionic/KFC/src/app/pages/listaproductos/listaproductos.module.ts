@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { ListaproductosPageRoutingModule } from './listaproductos-routing.module';
 
 import { ListaproductosPage } from './listaproductos.page';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ListaproductosPageRoutingModule
+    ListaproductosPageRoutingModule,
+    SharedModule
   ],
   declarations: [ListaproductosPage]
 })

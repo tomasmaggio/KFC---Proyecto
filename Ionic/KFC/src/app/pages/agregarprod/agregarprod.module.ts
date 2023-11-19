@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { AgregarprodPageRoutingModule } from './agregarprod-routing.module';
 
 import { AgregarprodPage } from './agregarprod.page';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    AgregarprodPageRoutingModule
+    AgregarprodPageRoutingModule,
+    SharedModule
   ],
   declarations: [AgregarprodPage]
 })

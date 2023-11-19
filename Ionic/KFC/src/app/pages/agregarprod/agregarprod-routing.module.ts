@@ -10,7 +10,7 @@ const routes: Routes = [
   },
   {
     path: 'agregar',
-    loadChildren: () => import('./agregar/agregar.module').then( m => m.AgregarPageModule)
+    loadChildren: () => import('./agregarprod.module').then( m => m.AgregarprodPageModule)
   }
 ];
 

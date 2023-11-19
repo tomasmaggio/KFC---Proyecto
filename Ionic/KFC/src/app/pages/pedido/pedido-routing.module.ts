@@ -10,7 +10,7 @@ const routes: Routes = [
   },
   {
     path: 'hacerpedido',
-    loadChildren: () => import('./hacerpedido/hacerpedido.module').then( m => m.HacerpedidoPageModule)
+    loadChildren: () => import('./pedido.module').then( m => m.PedidoPageModule)
   }
 ];
 

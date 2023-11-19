@@ -26,7 +26,8 @@ const routes: Routes = [
   {
     path: 'pedido',
     loadChildren: () => import('./pages/pedido/pedido.module').then( m => m.PedidoPageModule)
-  },  {
+  },
+  {
     path: 'admin',
     loadChildren: () => import('./pages/admin/admin.module').then( m => m.AdminPageModule)
   },

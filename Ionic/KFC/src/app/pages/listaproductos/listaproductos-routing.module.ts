@@ -10,7 +10,7 @@ const routes: Routes = [
   },
   {
     path: 'listaproductos',
-    loadChildren: () => import('./listaproductos/listaproductos.module').then( m => m.ListaproductosPageModule)
+    loadChildren: () => import('./listaproductos.module').then( m => m.ListaproductosPageModule)
   }
 ];
 

@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { PedidoPageRoutingModule } from './pedido-routing.module';
 
 import { PedidoPage } from './pedido.page';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    PedidoPageRoutingModule
+    PedidoPageRoutingModule,
+    SharedModule
   ],
   declarations: [PedidoPage]
 })
